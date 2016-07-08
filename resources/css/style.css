@@ -1,0 +1,47 @@
+.mdl-cell{
+  border:1px solid #888;
+  min-height:50px;
+  text-align: center;
+  padding: 15px;
+}
+
+main{
+  min-height: 400px;
+}
+
+nav.mdl-navigation .mdl-badge[data-badge]:after{
+  top: 5px;
+  right: -8px;
+}
+
+.md-18{
+  font-size: 18px;
+}
+
+.md-12{
+  font-size: 12px;
+}
+
+.orange{
+  color: orange;
+}
+
+.green{
+  color: #A4C639;
+}
+
+@media screen and (max-width: 700px){
+  nav.hide-phone{
+    display: none;
+  }
+  nav.mdl-navigation .mdl-badge[data-badge]:after{
+    top: 18px;
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 701px){
+  .show-phone{
+    display: none;
+  }
+}
