@@ -7,130 +7,246 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" />
     <link rel="stylesheet" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <header class="mdl-layout__header" >
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title" >Material Design</span>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation hide-phone">
-            <a href="#" class="mdl-navigation__link mdl-badge" data-badge="2">Página Inicial</a>
-            <a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="4">Meus Arquivos</a>
-            <a href="#" class="mdl-navigation__link mdl-badge">Enviar Novos Arquivos</a>
-          </nav>
-        </div>
-      </header> <!-- Menu -->
-
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title" >Material Design</span>
-        <nav class="mdl-navigation">
-          <a href="#" class="mdl-navigation__link">Informações</a>
-          <a href="#" class="mdl-navigation__link">Sobre</a>
-          <div class="show-phone">
-            <a href="#" class="mdl-navigation__link mdl-badge" data-badge="2">Página Inicial</a>
-            <a href="#" class="mdl-navigation__link mdl-badge mdl-badge--no-background" data-badge="4">Meus Arquivos</a>
-            <a href="#" class="mdl-navigation__link mdl-badge">Enviar Novos Arquivos</a>
-          </div>
-        </nav>
-      </div><!-- Sidebar -->
-
-      <div class="mdl-layout__content" >
-
-        <main>
-
-          <div class="mdl-grid">
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet"> <!-- google.com/design/icons -->
-              <h5>Ícones</h5>
-              <div>
-                <i class="material-icons green">android</i>
-                <i class="material-icons">done_all</i>
-                <i class="material-icons">mouse</i>
-                <i class="material-icons mdl-badge" data-badge="8" >thumb_up</i>
-                <br>
-                <i class="material-icons md-12">android</i>
-                <i class="material-icons md-12 orange">done_all</i>
-                <i class="material-icons md-12">mouse</i>
+    <header class="site-header">
+      <div class="aux cf">
+        <h2 class="site-header__title">
+          <a class="site-header__root-link" href="/wallet/" data-g-label="Header Logo">
+            <img class="site-header__wallet-logo" alt="Google Wallet" src="resources/images/wallet-logo.png">
+          </a>
+        </h2>
+        <nav class="site-header__main-nav" id="HeaderNav">
+          <ul>
+            <li>
+                <a class="nav-link" href="/wallet/faq/" data-g-label="FAQ">
+                  FAQ
+                </a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://wallet.google.com/?utm_source=wallet&amp;utm_medium=website&amp;utm_campaign=sign-in" data-g-label="Sign in">
+                Sign in
+              </a>
+            </li>
+            <li>
+              <div class="site-header__cta site-header__cta--desktop">
+                <button id="header-cta" class="get-app mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-g-event="Get the App" data-g-action="click" data-g-label="header:desktop">
+                    Get the App
+                </button>
+                  <div class="get-app-menu">
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="header-cta">
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.gmoney&amp;referrer=utm_source%3Dwallet%26utm_medium%3Dwebsite%26utm_campaign%3Dget-the-app" target="_blank" data-g-event="Store" data-g-action="Google Play Store" data-g-label="header:desktop">
+                <i class="material-icons get-app-menu__android-icon">&#xE859;</i>Android
+              </a>
+          </li>
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://itunes.apple.com/us/app/google-wallet/id575923525" target="_blank" data-g-event="Store" data-g-action="Apple App Store" data-g-label="header:desktop">
+                <i class="material-icons sprite-apple get-app-menu__ios-icon"></i>iOS
+              </a>
+          </li>
+        </ul>
+      </div>
               </div>
-            </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__cta site-header__cta--mobile">
+          <button id="get-app--large" class="get-app mdl-button mdl-button--raised mdl-button--colored js-get-app-button mdl-js-button mdl-js-ripple-effect" data-play-store-url="https://play.google.com/store/apps/details?id=com.google.android.apps.gmoney&amp;referrer=utm_source%3Dwallet%26utm_medium%3Dwebsite%26utm_campaign%3Dget-the-app" data-app-store-url="https://itunes.apple.com/us/app/google-wallet/id575923525" data-g-event="Get the App" data-g-action="click" data-g-label="header:mobile">
+              Get the App
+          </button>
+            <div class="get-app-menu">
+        <ul class="mdl-menu mdl-menu--top-left  mdl-js-ripple-effect" for="get-app--large">
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.gmoney&amp;referrer=utm_source%3Dwallet%26utm_medium%3Dwebsite%26utm_campaign%3Dget-the-app" target="_blank" data-g-event="Store" data-g-action="Google Play Store" data-g-label="header:mobile">
+                <i class="material-icons get-app-menu__android-icon">&#xE859;</i>Android
+              </a>
+          </li>
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://itunes.apple.com/us/app/google-wallet/id575923525" target="_blank" data-g-event="Store" data-g-action="Apple App Store" data-g-label="header:mobile">
+                <i class="material-icons sprite-apple get-app-menu__ios-icon"></i>iOS
+              </a>
+          </li>
+        </ul>
+      </div>
+        <div>
+      </div>
+    </header> <!-- Header -->
 
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
-              <h5>Buttons</h5>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
-              <h5>Cards</h5>
-            </div>
-
+    <div class="hero hero--home">
+      <div class="hero__bg-container">
+        <div class="hero__bg-container-overlay">
+        	<h1>An easy way to pay<br>friends and family</h1>
+          <div class="hero__get-app">
+            <button id="get-app--hero__button" class="get-app hero__btn mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" data-g-event="Get the App" data-g-action="click" data-g-label="hero">
+                Get the App
+            </button>
+              <div class="get-app-menu">
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="get-app--hero__button">
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.gmoney&amp;referrer=utm_source%3Dwallet%26utm_medium%3Dwebsite%26utm_campaign%3Dget-the-app-panel" target="_blank" data-g-event="Store" data-g-action="Google Play Store" data-g-label="hero">
+                <i class="material-icons get-app-menu__android-icon">&#xE859;</i>Android
+              </a>
+          </li>
+          <li class="get-app-menu__item mdl-menu__item ">
+              <a href="https://itunes.apple.com/us/app/google-wallet/id575923525" target="_blank" data-g-event="Store" data-g-action="Apple App Store" data-g-label="hero">
+                <i class="material-icons sprite-apple get-app-menu__ios-icon"></i>iOS
+              </a>
+          </li>
+        </ul>
+      </div>
           </div>
-
-        </main>
-
-        <footer class="mdl-mega-footer" >
-
-          <div class="mdl-mega-footer--top-section">
-
-            <div class="mdl-mega-footer--drop-down-section">
-              <input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
-              <h1 class="mdl-mega-footer--heading" >Courses</h1>
-              <ul class="mdl-mega-footer--link-list" >
-                <li>HTML5 and CSS3</li>
-                <li>Jquery Mobile</li>
-                <li>Bootstrap 3</li>
-              </ul>
-            </div>
-
-            <div class="mdl-mega-footer--drop-down-section">
-              <input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
-              <h1 class="mdl-mega-footer--heading" >Company</h1>
-              <ul class="mdl-mega-footer--link-list" >
-                <li>Business</li>
-                <li>Persons</li>
-                <li>About</li>
-              </ul>
-            </div>
-
-            <div class="mdl-mega-footer--drop-down-section">
-              <input type="checkbox" class="mdl-mega-footer--heading-checkbox" checked>
-              <h1 class="mdl-mega-footer--heading" >Clients</h1>
-              <ul class="mdl-mega-footer--link-list" >
-                <li>Meta</li>
-                <li>Ideal</li>
-                <li>Others</li>
-              </ul>
-            </div>
-
-            <div class="mdl-mega-footer--drop-down-section">
-              <h1 class="mdl-mega-footer--heading" >Company</h1>
-              <ul class="mdl-mega-footer--link-list" >
-                <li>Business</li>
-                <li>Persons</li>
-                <li>About</li>
-              </ul>
-            </div>
-
+            <a href="https://www.youtube.com/watch?v=LnmjINN9Z1A" data-target-id="youtube-video-container" data-youtube-id="LnmjINN9Z1A" class="hero__video-btn mdl-button mdl-js-button js-video-trigger" data-g-label="Watch the Video" data-toggle-target="HeaderNav" data-g-event="Video">Watch the Video</a>
+        </div>
+      </div>
+        <div class="video-container">
+          <div id="youtube-video-container"></div>
+          <div class="video-close js-video-close js-toggle" data-toggle-target="HeaderNav">
+            <span class="icon icon--video-close"><!-- --></span>
           </div>
-
-          <div class="mdl-mega-footer--middle-section"></div>
-
-          <div class="mdl-mega-footer--bottom-section">
-
-            <div class="mdl-logo" >Footer</div>
-            <ul class="mdl-mega-footer--link-list" >
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ul>
-
+        </div>
+      <button class="hero__fab mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-shadow--4dp" data-scroll-to="section--welcome" data-g-event="FAB" data-g-action="click" data-g-label="Down to content">
+        <i class="material-icons">&#xE313;</i>
+      </button>
+    </div>
+    <section class="section section--welcome section--text-left section--rev section--align-image-bottom">
+      <div class="aux">
+        <div class="grid grid--bottom">
+          <div class="section__content grid__item palm--one-whole lap--one-half desk--one-half">
+            <header class="recesection__header">
+              <h2 class="section__title">Send and receive<br>money instantly</h2>
+              <p>Send money to anyone in the US using an email address or phone number. It's fast, easy, and free to send directly from your debit card, bank account, or Wallet Balance. You can do all this in the Google Wallet app, or, if you’re on desktop, you can also send and request money in Gmail.</p>
+              <p>When you receive money, you can quickly cash out to your bank account using your debit card, and get access to your money within minutes.</p>
+            </header>
+          </div><!--
+          --><div class="section__image grid__item palm--one-whole lap--one-half desk--one-half">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="./resources/images/welcome-desktop.png" media="(min-width: 769px)">
+              <source srcset="/wallet/static/images/pages/home/sections/welcome/welcome-mobile.png" media="(max-width: 768px)">
+              <!--[if IE 9]></video><![endif]-->
+              <img srcset="/wallet/static/images/pages/home/sections/welcome/welcome-desktop.png" alt="Welcome to the new Google Wallet.">
+            </picture>
           </div>
+        </div>
+      </div>
+    </section>
 
-        </footer>
+    <section class="section section--notifications section--grey section--align-image-bottom">
+    <div class="aux">
+      <div class="grid grid--middle">
+        <div class="section__content grid__item palm--one-whole lap--one-half desk--one-half">
+          <header class="section__header">
+            <h2 class="section__title">Notifications help<br>you stay in control</h2>
+            <p>Get real-time notifications on your phone every time you receive money. If you get a request for money, you can quickly settle up straight from the notification.</p>
+          </header>
+        </div><!--
+        --><div class="section__image grid__item palm--one-whole lap--one-half desk--one-half">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="./resources/images/notifications-desktop.png" media="(min-width: 769px)">
+            <source srcset="/wallet/static/images/pages/home/sections/notifications/notifications-mobile.png" media="(max-width: 768px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="/wallet/static/images/pages/home/sections/notifications/notifications-desktop.png" alt="Stay in control with instant notifications.">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
 
+    <section class="section section--safety section--rev">
+      <div class="aux">
+        <div class="grid grid--middle">
+          <div class="section__content grid__item palm--one-whole lap--one-half desk--one-half">
+            <header class="section__header">
+              <h2 class="section__title">Keep your money safe</h2>
+              <p>Your Google Wallet app can only be accessed with your Google Payments PIN. If your phone is ever lost or stolen, you can instantly remove access to your account on that phone at <a href="https://security.google.com/settings/security/activity" target="_blank">myaccount.google.com</a></p>
+              <p></p>
+              <p><a href="https://www.google.com/intl/en/policies/privacy/" class="basic-cta" data-g-label="Privacy Matters" target="_blank">Privacy Matters</a></p>
+            </header>
+          </div><!--
+          --><div class="section__image grid__item palm--one-whole lap--one-half desk--one-half">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="./resources/images/safety-desktop.png" media="(min-width: 481px)">
+              <source srcset="/wallet/static/images/pages/home/sections/safety/safety-mobile.png" media="(max-width: 480px)">
+              <!--[if IE 9]></video><![endif]-->
+              <img srcset="/wallet/static/images/pages/home/sections/safety/safety-desktop.png" alt="Keep your money safe">
+            </picture>
+          </div>
+        </div>
       </div>
 
-    </div>
+      <div class="aux section__modules">
+        <div class="grid">
+          <div class="grid__item one-whole lap--one-half desk--one-half section__module">
+            <img src="/wallet/static/images/pages/home/sections/safety/data-encryption.png" alt="Data Encryption">
+            <h4>Data Encryption</h4>
+            <p>All your financial information in Google Wallet is encrypted and stored on Google’s secure servers in secure locations.</p>
+          </div><!--
+        --><div class="grid__item one-whole lap--one-half desk--one-half section__module">
+            <img src="/wallet/static/images/pages/home/sections/safety/fraud-protection.png" alt="Fraud Protection">
+            <h4>Fraud Protection</h4>
+            <p>Google Wallet comes with 24/7 fraud monitoring and covers 100&#37; of all verified unauthorized transactions.</p>
+                <p class="cta-links">
+                  <a href="https://support.google.com/wallet/answer/3026245" data-g-label="Google Wallet Fraud Protection" target="_blank">Google Wallet Fraud Protection</a>
+                  <span class="divider">|</span>
+                  <a href="https://support.google.com/wallet/contact/unrecognized_charge" data-g-label="File a Claim" target="_blank">File a Claim</a>
+                </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--support section--grey">
+      <div class="aux">
+        <div class="grid">
+          <div class="help-item grid__item one-whole lap--one-half desk--one-half">
+            <h3>Questions?</h3>
+            <p>Check out the <a href="/wallet/faq">FAQs</a>.</p>
+          </div><!--
+       --><div class="help-item grid__item one-whole lap--one-half desk--one-half">
+            <h3>Need support?</h3>
+            <p>Go to the <a href="https://support.google.com/wallet/" target="blank">Wallet Help Center</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--social section--grey">
+      <div class="aux">
+        <div class="social-icons">
+          <span class="social-icons__label">Follow</span><!--
+       --><ul><!--
+       --><li><a href="https://plus.google.com/+GoogleWallet" class="google-plus text-hidden" data-g-label="google-plus" target="_blank">Google Plus</a></li><!--
+       --><li><a href="https://www.twitter.com/GoogleWallet" class="sprite-twitter text-hidden" data-g-label="twitter" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="aux">
+        <div class="site-footer__top">
+          <h4>Learning &amp; Support</h4>
+          <ul>
+              <li><a href="https://support.google.com/wallet/?hl=en#topic=3209987" data-g-label="Help Center">Help Center</a></li>
+              <li><a href="https://support.google.com/wallet/answer/146883?hl=en" data-g-label="State Licenses">State Licenses</a></li>
+              <li><a href="https://payments.google.com/termsOfService?type=BUYER&amp;gl=US" data-g-label="Payments Terms of Service">Payments Terms of Service</a></li>
+              <li><a href="https://payments.google.com/files/privacy.html" data-g-label="Payments Privacy Policy">Payments Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__bottom">
+          <ul>
+              <li><a href="https://www.google.com/" data-g-label="Google">Google</a></li>
+              <li><a href="https://www.google.com/intl/en/policies/privacy/" data-g-label="Privacy">Privacy</a></li>
+              <li><a href="http://www.google.com/intl/en/policies/terms/" data-g-label="Terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   </body>
